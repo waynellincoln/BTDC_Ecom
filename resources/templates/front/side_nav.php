@@ -5,10 +5,10 @@
        <!--Query to display categories from database unto index page-->
        <?php
         
-            $query = "SELECT *
+            $sql = "SELECT *
                       FROM categories";
         
-            $display_categories = mysqli_query($con, $query);
+            $display_categories = mysqli_query($con, $sql);
         
             while ($row = mysqli_fetch_array($display_categories)) {
                 
