@@ -11,10 +11,10 @@
      __DIR__ ;
 
     //idefining path to template front
-    defined ("TEMPLATE_FRONT") ? null : define ("TEMPLATE_FRONT", __DIR__ . DS . "template/front");
+    defined ("TEMPLATE_FRONT") ? null : define ("TEMPLATE_FRONT", __DIR__ . DS . "templates/front");
 
     //defining path to template back
-    defined ("TEMPLATE_BACK") ? null : define ("TEMPLATE_BACK", __DIR__ . DS . "template/back");
+    defined ("TEMPLATE_BACK") ? null : define ("TEMPLATE_BACK", __DIR__ . DS . "templates/back");
 
     //defining database connection
     defined ("DB_HOST") ? null : define ("DB_HOST",  "localhost");
