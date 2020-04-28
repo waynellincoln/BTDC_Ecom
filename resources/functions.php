@@ -1,4 +1,6 @@
 <?php
+
+//======================================HELPER FUNCTIONS===================================================
     
 function redirect () {
     
@@ -15,7 +17,7 @@ function query ($sql) {
     
 }
 
-function ($result) {
+function result ($result) {
     
     global $con;
     
