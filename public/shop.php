@@ -18,7 +18,8 @@
         </header>
 
         <hr>
-       
+        
+        
        
         <!-- Title -->
         <div class="row">
@@ -31,21 +32,16 @@
         <!-- Page Features -->
         <div class="row text-center">
             
-             
-        <?php
+            <?php
         
             //Query to display products based on the category clicked on the index page
-            if (isset($_GET['id'])) {
-                
-                $id_from_category   = $_GET['id'];
                 
                 $query = "SELECT *
-                          FROM products
-                          WHERE product_category_id = $id_from_category";
+                          FROM products";
            
-                $display_category_products = mysqli_query($con, $query);
+                $display_products_on_shop_page = mysqli_query($con, $query);
                 
-                while ($row = mysqli_fetch_array($display_category_products)) {
+                while ($row = mysqli_fetch_array($display_products_on_shop_page)) {
                     
                     $product_id             = $row['product_id'];
                     $product_title          = $row['product_title'];
@@ -54,7 +50,7 @@
                     $product_description    = $row['product_description'];
                     $product_image          = $row['product_image'];
                     
-        ?>
+           ?>
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
@@ -67,17 +63,17 @@
                         </p>
                     </div>
                 </div>
-                 
             </div>
             
-            <?php   }  } ?> 
-
-        </div><!-- /.row -->
-      
-             
-    </div><!-- /container -->
-       
-     
+            <?php   }  ?>
+        
+        </div>
+        <!-- /.row -->
+        
+         
+        
+        
+        
         <hr>
         
      

@@ -15,7 +15,7 @@
                 $cat_id     = $row['cat_id'];
                 $cat_title  = $row['cat_title'];
                 
-                echo "<a href='#' class='list-group-item'>{$cat_title} </a>";
+                echo "<a href='../public/category.php?id={$cat_id}' class='list-group-item'>{$cat_title} </a>";
                 
                 if (!$display_categories) {
                     

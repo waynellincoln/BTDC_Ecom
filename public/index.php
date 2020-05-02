@@ -23,7 +23,7 @@
 
                 <div class="row">
 
-                    
+                  <!--Code to display products on index page-->   <!--Code to display products on index page-->
                        
                        <?php
                             $sql = "SELECT *
@@ -36,6 +36,7 @@
                                 $product_id             = $row['product_id'];
                                 $product_title          = $row['product_title'];
                                 $product_price          = $row['product_price'];
+                                $short_desc             = $row['short_desc'];
                                 $product_description    = $row['product_description'];
                                 $product_image          = $row['product_image'];
                                 
@@ -46,7 +47,7 @@
                            <a href="item.php?id=<?php echo $product_id ;?>"><img src=<?php echo $product_image;?> alt='' width=320></a>
                             <div class="caption">
                                 <h4 class='pull-right'><?php echo $product_price;?> </h4>
-                                <h4><a href=''><?php echo $product_title; ?></a>
+                                <h4><a href='item.php?id=<?php echo $product_id ;?>'><?php echo $product_title; ?></a>
                                 </h4>
                                 <p><?php echo $product_description;?></p>
                                 <a class="btn btn-primary" target="_blank" href="#">Add To Cart</a>
@@ -60,10 +61,7 @@
                     </div>
                 </div>
             </div>
-
-               
-                        
-                        
+         
 
         </div>  <!--ROW ends-->
 
