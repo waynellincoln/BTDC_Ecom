@@ -69,6 +69,9 @@ function fetch_array ($result) {
 
 
 
-
+function send_email (){
+    
+    
+}
 
 ?>
