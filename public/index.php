@@ -19,9 +19,11 @@
                          <?php include (TEMPLATE_FRONT . DS . "slider.php"); ?>
                     </div>
 
-                </div>
+                </div> 
 
                 <div class="row">
+                                
+                  
 
                   <!--Code to display products on index page-->   <!--Code to display products on index page-->
                        
@@ -49,8 +51,8 @@
                                 <h4 class='pull-right'><?php echo $product_price;?> </h4>
                                 <h4><a href='item.php?id=<?php echo $product_id ;?>'><?php echo $product_title; ?></a>
                                 </h4>
-                                <p><?php echo $product_description;?></p>
-                                <a class="btn btn-primary" target="_blank" href="#">Add To Cart</a>
+                                <p><?php echo $short_desc;?></p>
+                                <a class="btn btn-primary" target="_blank" href="cart.php?add=<?php echo $product_id ;?>">Add To Cart</a>
                                  
                              </div> 
                          </div>

@@ -3,6 +3,7 @@
     ob_start();
 
     session_start();
+    //session_destroy();
 
     //if directory separator is not defined, define it as DS
     defined ("DS") ? null : define ("DS", DIRECTORY_SEPARATOR);
